@@ -13,7 +13,7 @@ export const Item = styled.li`
   box-shadow: 1px 1px 14px 4px rgba(0, 0, 0, 0.12);
   border-radius: 15px;
 `;
-export const Contact = styled.span`
+export const Contacts = styled.span`
   display: inline-block;
   min-width: 250px;
 `;

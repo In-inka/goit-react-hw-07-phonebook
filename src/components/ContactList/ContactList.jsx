@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { List, Item, Btn, Contact } from './ContactList.styled';
+import { List, Item, Btn, Contacts } from './ContactList.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from 'redux/operations';
 import { getContacts } from 'redux/Selectors';
@@ -18,12 +18,12 @@ const ContactList = () => {
     <List>
       {contactItem().map(({ id, name, phone }) => (
         <Item key={id}>
-          <Contact>
+          <Contacts>
             {' '}
             {`${name}:`}
             <br />
             {`${phone}`}
-          </Contact>
+          </Contacts>
           {
             <Btn type="button" onClick={() => dispatch(deleteContact(id))}>
               Delete
